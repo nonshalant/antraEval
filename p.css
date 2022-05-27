@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    }
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+    }
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    max-width:100%;
+
+}
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.6rem;
+    line-height:1.5;
+    color:#4f4f4f;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(141, 51, 141);
+    overflow: hidden;
+}
+a{
+    font-family: 'Roboto Mono', monospace;
+    text-decoration:none;
+}
+h1{
+    font-size:4rem;
+    font-family: ‘monospace’
+}
+section{
+    padding:4% 0;
+}
+
+/* main  */
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.search_bar-container{
+    width: 75%;
+    margin: auto;
+    padding-top: 5%;
+    color: white;
+    display: flex;
+    gap: 5%;
+}
+
+#search_bar{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.search_bar-container .search_btn{
+    border-radius: 20px;
+    padding: 2%;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: black;
+  }
+
+.artist_container{
+    margin-top: 10%;
+    background: whitesmoke;
+    width: 85%;
+    overflow: scroll;
+}
+
+.userResult{
+   
+}
+
+.userResult img{
+    height: 100px;
+}
+
+.userResult p{
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Phones:  */
+
+@media screen and (max-width: 767px) {
+    
+}
+
+/* Tablet: */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .userResult{
+        display: flex;
+    }
+}
+
+/* Desktop:  */
+
+@media screen and (min-width: 1024px){
+
+}
