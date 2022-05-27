@@ -2,7 +2,6 @@ const selectors = {
     searchBar : document.querySelector('#search_bar'),
     searchButton : document.querySelector('.search_btn'),
     artistContainer : document.querySelector('.artist_container')
-
 }
 
 selectors.searchBar.addEventListener('keydown', getUserSearch)
@@ -10,6 +9,7 @@ selectors.searchButton.addEventListener('click', searchItunes)
 
 function getUserSearch(e){
     const userSearchValue = e.target.value
+    console.log(userSearchValue)
     return userSearchValue
 }
 
