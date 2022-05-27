@@ -90,14 +90,16 @@ header{
   }
 
 .artist_container{
+    margin: auto;
     margin-top: 10%;
     background: whitesmoke;
     width: 85%;
     overflow: scroll;
+   
 }
 
 .userResult{
-   
+  
 }
 
 .userResult img{
