@@ -34,7 +34,7 @@ body{
     color:#4f4f4f;
     font-family: 'Roboto Mono', monospace;
     background-color: rgb(141, 51, 141);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 a{
     font-family: 'Roboto Mono', monospace;
