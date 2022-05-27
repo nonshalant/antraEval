@@ -2,6 +2,7 @@ const selectors = {
     searchBar : document.querySelector('#search_bar'),
     searchButton : document.querySelector('.search_btn'),
     artistContainer : document.querySelector('.artist_container')
+
 }
 
 selectors.searchBar.addEventListener('keydown', getUserSearch)
@@ -11,6 +12,12 @@ function getUserSearch(e){
     const userSearchValue = e.target.value
     return userSearchValue
 }
+
+selectors.searchBar.addEventListener("keypress", (e) => {
+    if (e.keyCode === 13) {
+      searchItunes();
+    }
+  });
 
 function searchItunes(){
     const searchedWord = selectors.searchBar.value
@@ -32,9 +39,9 @@ function iterateResults(resultsArr){
         console.log(item)
         return `
         <div class=userResult>
-        
             <p> ${item.artistName} </p>
             <img src = ${item.artworkUrl60} />
+       
             <p> ${item.trackCount}
         </div>`
     })
